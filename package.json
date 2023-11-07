@@ -6,7 +6,7 @@
   "scripts": {
     "headed": "npx cypress open",
     "headless": "npx cypress run",
-    "start": "npm run start-server"
+    "start": "npm run"
   },
   "keywords": [],
   "author": "",
