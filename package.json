@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "headed": "npx cypress open",
-    "headless": "npx cypress run"
+    "headless": "npx cypress run",
+    "start": "npm start"
   },
   "keywords": [],
   "author": "",
