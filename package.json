@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx cypress open"
+    "headed": "npx cypress open",
+    "headless": "npx cypress run"
   },
   "keywords": [],
   "author": "",
