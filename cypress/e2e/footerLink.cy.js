@@ -1,14 +1,14 @@
-import { HomePage } from '../pages/homePage';
+import { HomePage } from "../pages/homePage";
 
 const homePage = new HomePage();
 
-describe('Footer links', () => {
-    it('Should open Github page in a new window', () => {
-        cy.visit('/');
+describe("Footer links", () => {
+    it("Should open Github page in a new window", () => {
+        cy.visit("/");
 
         // Store the current window count
         let initialWindowCount;
-       
+
         // Get the initial window count
         cy.window().then((win) => {
             initialWindowCount = win.length;
@@ -27,17 +27,17 @@ describe('Footer links', () => {
 
                 // Check if the new window's location is available
                 if (newWindow.location) {
-                    expect(newWindow.location.href).to.equal('https://github.com/gothinkster/angularjs-realworld-example-app');
+                    expect(newWindow.location.href).to.equal(
+                        "https://github.com/gothinkster/angularjs-realworld-example-app"
+                    );
                 } else {
                     // Handle the case where location is not available
-                    cy.log('New window location is not available.');
+                    cy.log("New window location is not available.");
                 }
             } else {
                 // Handle the case where no new window was opened
-                cy.log('No new window was opened.');
+                cy.log("No new window was opened.");
             }
         });
     });
 });
-
-

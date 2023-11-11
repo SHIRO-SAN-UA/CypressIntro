@@ -1,30 +1,20 @@
+export class HomePage {
+    elements = {
+        signupLink: () => cy.get('[href="#/register"]'),
+        signinLink: () => cy.get('[href="#/login"]'),
+        gitHubFooterLink: () => cy.get("body > a:nth-child(3)"),
+    };
 
-export class HomePage{
-
-    elements ={
-
-        signupLink : () => cy.get('[href="#/register"]'),
-        signinLink : () => cy.get('[href="#/login"]'),
-        gitHubFooterLink : () => cy.get('body > a:nth-child(3)'),
-
-
-    }
-
-    clickGitHubFooterLink(){
-
+    clickGitHubFooterLink() {
         this.elements.gitHubFooterLink().click();
     }
 
-    clickSignupLink(){
-
+    clickSignupLink() {
         this.elements.signupLink().click();
-
     }
-    clickSigninLink(){
-
+    clickSigninLink() {
         this.elements.signinLink().click();
     }
-
 }
 
-export default new HomePage;
+export default new HomePage();
