@@ -13,6 +13,7 @@ HTML Reporting system is hosted at [Github Pages] (!!!).
 -   [Cypress Framework](https://www.cypress.io/) - testing framework for modern web apps.
 -   [Faker](https://fakerjs.dev/guide/) - brary that generates fake (but reasonable) data.
 -   [Prettier](https://prettier.io/) - code formatter.
+-   [mochawesome](https://github.com/adamgruber/mochawesome) - html reporter.
 
 ## Setup
 
@@ -21,6 +22,7 @@ HTML Reporting system is hosted at [Github Pages] (!!!).
 1.  Install Node.js.
 1.  Run `git clone https://github.com/SHIRO-SAN-UA/CypressIntro` to clone repository.
 1.  Run `npm install cypress --save-dev` to install Cypress and dependencies.
+1.  Run `npm install --save-dev mochawesome` to install reporter and dependencies.
 1.  Run `npm install @faker-js/faker --save-dev` to install Faker and dependencies.
 
 ### How to run tests
@@ -39,6 +41,6 @@ HTML Reporting system is hosted at [Github Pages] (!!!).
 ### Standards
 
 All test cases should be coded inside the `e2e` folder.
-Project build using. The main idea is to encapsulate logic into page classes and use the logic in the spec files to run the tests.
+Project build using [Page Object Model](https://playwright.dev/docs/pom). The main idea is to encapsulate logic into page classes and use the logic in the spec files to run the tests.
 
 For instance we define the class LoginPage with locators and elements and reuse them in the code.

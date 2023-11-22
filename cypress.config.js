@@ -8,6 +8,7 @@ module.exports = defineConfig({
       // implement node event listeners here
     },
     baseUrl: "https://demo.realworld.io/#/",
+    reporter: "mochawesome",
   },
   
 });
