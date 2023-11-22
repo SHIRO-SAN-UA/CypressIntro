@@ -1,4 +1,4 @@
-# Web Automation Framework for www.redmine.org website.
+# Web Automation Framework for demo.realworld.io website.
 
 
 Automation framework for [https://demo.realworld.io/](https://demo.realworld.io/).
