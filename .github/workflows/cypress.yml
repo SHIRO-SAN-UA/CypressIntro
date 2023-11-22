@@ -1,4 +1,4 @@
-name: Cypress Tests
+name: Cypress Tests and Deploy Report
 
 on:
   workflow_dispatch:
@@ -9,7 +9,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       # Install NPM dependencies, cache them correctly
       # and run all Cypress tests
       - name: Cypress run
         uses: cypress-io/github-action@v6
+
+  deploy-report:
+    needs: cypress-run
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Download Mochawesome report from the Cypress run job
+      - name: Download Mochawesome Report
+        uses: actions/download-artifact@v2
+        with:
+          name: mochawesome-report
+
+      # Deploy Mochawesome report to GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: |
+          git config --global user.email "actions@github.com"
+          git config --global user.name "GitHub Actions"
+          git branch gh-pages
+          git checkout gh-pages
+          git rm -rf .
+          cp -r $GITHUB_WORKSPACE/mochawesome-report/* .
+          git add .
+          git commit -m "Deploy Mochawesome Report"
+          git push origin gh-pages
