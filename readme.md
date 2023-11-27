@@ -21,20 +21,19 @@ HTML Reporting system is hosted at [Github Pages] (!!!).
 
 1.  Install Node.js.
 1.  Run `git clone https://github.com/SHIRO-SAN-UA/CypressIntro` to clone repository.
-1.  Run `npm install cypress --save-dev` to install Cypress and dependencies.
-1.  Run `npm install --save-dev mochawesome` to install reporter and dependencies.
-1.  Run `npm install @faker-js/faker --save-dev` to install Faker and dependencies.
+1.  Run `npm install ci` to install dependencies.
 
 ### How to run tests
 
 
 1.  Headed `npx cypress open`.
 1.  Headless `npx cypress run`.
+1.  Run `cypress open --config-file cypress.1024.js` to run with 1024x768 resolution configuration
 
 
 ### Structure
 
--   `cypress.config.js` config file.
+-   `cypress.config.js` main config file.
 -   `e2e` folder with tests
 -   `pages` - forder with pages
 
