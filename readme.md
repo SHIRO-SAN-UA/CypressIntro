@@ -5,7 +5,7 @@ Automation framework for [https://demo.realworld.io/](https://demo.realworld.io/
 
 ## Reports
 
-HTML Reporting system is hosted at [Github Pages] (https://shiro-san-ua.github.io/CypressIntro/html/index.html).
+HTML Reporting system is hosted at [Github Pages](https://shiro-san-ua.github.io/CypressIntro/html/index.html).
 
 ## Technologies Stack
 
