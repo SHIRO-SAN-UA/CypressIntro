@@ -28,7 +28,7 @@ HTML Reporting system is hosted at [Github Pages] (!!!).
 
 1.  Headed `npx cypress open`.
 1.  Headless `npx cypress run`.
-1.  Run `cypress open --config-file cypress.1024.js` to run with 1024x768 resolution configuration
+1.  Run `cypress open --config-file cypress.1024.config.js` to run with 1024x768 resolution configuration
 
 
 ### Structure
