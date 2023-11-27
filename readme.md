@@ -13,7 +13,7 @@ HTML Reporting system is hosted at [Github Pages](https://shiro-san-ua.github.io
 -   [Cypress Framework](https://www.cypress.io/) - testing framework for modern web apps.
 -   [Faker](https://fakerjs.dev/guide/) - brary that generates fake (but reasonable) data.
 -   [Prettier](https://prettier.io/) - code formatter.
--   [mochawesome](https://github.com/adamgruber/mochawesome) - html reporter.
+-   [mochawesome](https://github.com/LironEr/cypress-mochawesome-reporter) - html reporter.
 
 ## Setup
 
