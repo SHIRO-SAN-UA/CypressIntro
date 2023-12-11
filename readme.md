@@ -21,7 +21,7 @@ HTML Reporting system is hosted at [Github Pages](https://shiro-san-ua.github.io
 
 1.  Install Node.js.
 1.  Run `git clone https://github.com/SHIRO-SAN-UA/CypressIntro` to clone repository.
-1.  Run `npm install ci` to install dependencies.
+1.  Run `npm i` to install dependencies.
 
 ### How to run tests
 
